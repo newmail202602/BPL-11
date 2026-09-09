@@ -1,8 +1,13 @@
+import hero from "../assets/banner-main.png";
+import banner from "../assets/bg-shadow.png";
 function Hero() {
   return (
-    <section className="container bg-gray-800 bg-[url('/public/bg-shadow.png')] bg-cover bg-center w-full mx-auto py-10 rounded-3xl text-center">
+    <section
+      className="container w-full mx-auto py-10 rounded-3xl text-center bg-gray-800 bg-cover bg-center"
+      style={{ backgroundImage: `url(${banner})` }}
+    >
       <div>
-        <img className="mx-auto" src="/public/banner-main.png" />
+        <img className="mx-auto" src={hero} />
         <h1 className="text-3xl text-white font-bold mt-4">
           Assemble Your Ultimate Dream 11 Cricket Team
         </h1>

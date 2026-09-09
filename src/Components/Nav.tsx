@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from "../assets/logo.png";
 type CoinHistory = {
   player: string;
   amount: number;
@@ -20,7 +20,7 @@ function Nav({
       <nav>
         <div className="container mx-auto flex items-center justify-between py-5">
           {/* Logo */}
-          <img src="/logo.png" alt="Logo" />
+          <img src={logo} alt="Logo" />
 
           {/* Menu */}
           <ul className="flex items-center gap-12 text-gray-400">
